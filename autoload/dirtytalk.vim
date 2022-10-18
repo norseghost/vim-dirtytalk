@@ -12,5 +12,5 @@ function! dirtytalk#update()
   call writefile(l:wordlist_full, l:wordlist_output_file)
   let l:spell_dir = spellfile#WritableSpellDir().'/'
   call mkdir(l:spell_dir, 'p')
-  execute 'mkspell! '.l:spell_dir.'programming'.' '.l:wordlist_output_file
+  execute 'mkspell! '.l:spell_dir.'code'.' '.l:wordlist_output_file
 endfunction
